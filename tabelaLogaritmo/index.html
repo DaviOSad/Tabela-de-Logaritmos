@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="icon" href="99.png">
+    <script src="java.js"></script>
+    <title>Tabela de Logaritmo</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h3 class="titulo">Tabela de Logaritmo</h3>
+        <p class="desc">Insira os valores pedidos para calcular sua tabela de logaritmos</p>
+
+    </header>
+
+    <section>
+
+        <!-- *CALCULADORA -->
+        <div class="formulario">
+
+            <!-- *calculadora de ln -->
+            <div id="container-calc-ln">
+
+                <h1 id="title-ln">Calcula Ln</h1>
+                <p id="desc-ln">Insira um valor abaixo para calcular o seu logaritmo natural</p>
+
+                <div id="input-calc-ln">
+                    
+                    <input type="text" id="entrada" placeholder="Digite um valor" /> 
+                    <button onclick="calcularLn()" id="btn-calc-ln">Calcular</button>
+
+                </div>
+
+                <div class="container-resp" id="container-resp-ln"><!-- saída - vem do js --></div>
+
+            </div>
+            
+            <!-- *calculadora com qualquer base -->
+            <div id="container-calc-base">
+                
+                <h2 id="title-base">Criação da Tabela</h2>
+                <p id="desc-base">Insira o limite inferior, superior e uma base.<br>Será gerada uma tabela com os valores dos logaritmos<br>nessa base e o tempo de execução do programa</p>
+
+                <div id="input-calc-base">
+
+                    <input type="text" id="min" placeholder="Min" />
+                    <input type="text" id="max" placeholder="Max" /> 
+                    <input type="text" id="base" placeholder="Base" /> 
+                    
+                </div>
+                
+                <button onclick="calcularLogX()" id="btn-calc-base">Calcular</button>
+                
+                <div id="container-resp-base"><!-- base inserida pelo user --></div>
+
+                <div class="container-resp" id="container-resp-log"><!-- saída - vem do js --></div>
+                
+            </div>
+
+            
+        </div>
+
+    </section>
+
+    <!-- *RODAPÉ -->
+    <footer>
+        <p id="title-nomes">Nome dos Integrantes:</p>
+        <p id="nomes">
+            <span onclick="Oba ()">Arthur Santos</span><br>
+            Catarina F. M. Castro<br>
+            Davi Oliveira Sad<br>
+            Matheus Fagundes
+        </p>
+    </footer>
+
+</body>
+
+</html>

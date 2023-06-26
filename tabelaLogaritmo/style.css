@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #021C26;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ?------------------------- HEADER ------------------------- */
+
+header{
+    background-color:#043142;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.titulo{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    padding: 20px;
+    color: #3DF2E0;
+}
+
+header p{
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    color: #0FB2F2;
+}
+
+/* ?------------------------- CALCULADORA ------------------------- */
+
+.formulario{
+    display: block;
+    margin: 150px auto;
+    width: 40%;
+}
+
+input{
+    height: 20px;
+    border-style: hidden;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #085A8C;
+}
+
+input::placeholder{
+    color: #0FB2F2;
+    font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+    background-color: #0f75b4;
+}
+
+button{
+    border-style: hidden;
+    background-color: #3DF2E0;
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #043142;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 20px 5px black;
+}
+
+/* ?CALCULADORAS */
+
+#title-ln, #title-base{
+    color: #3DF2E0;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 26px;
+}
+
+#desc-ln, #desc-base{
+    color: #0FB2F2;
+    font-size: 18px;
+    font-style: oblique;
+    margin-bottom: 30px;
+}
+
+#container-calc-ln, #container-calc-base{
+    text-align: center;
+    display: block;
+    background-color: #032940;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ?CALCULADORA DE LN */
+
+#resps-block-one{
+    background-color: #0FB2F2;
+    border-style: hidden;
+    border-radius: 10px;
+    color: #021C26;
+    padding: 15px;
+}
+
+#input-calc-ln{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+#input-calc-ln input{
+    height: 20px;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #3DF2E0;
+}
+
+/* ?CRIAÇÃO DA TABELA */
+
+#input-calc-base{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+#input-calc-base input{
+    height: 20px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #3DF2E0;
+}
+
+#container-calc-base button{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#resposta{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td{
+    border: 1px solid #021C26;
+    border-radius: 10px;
+    background-color: #0FB2F2;
+    padding: 10px;
+}
+
+.title-tabela{
+    border-style: hidden;
+}
+
+.container-resp{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#desc-tabela{
+    margin: 15px;
+    color: #0FB2F2;
+}
+
+#format-tabela,#format-tabela-2,#format-tabela-3{
+    color: #021C26;
+    font-weight: bold;
+    border-style: hidden;
+}
+
+/* ?------------------------- FOOTER ------------------------- */
+
+footer{
+    margin-top: auto;
+    background-color: #043142;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+footer p {
+    font-size: 25px;
+    color: #0FB2F2;
+}
+
+#title-nomes{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    padding: 20px; 
+    padding-bottom: 10px;  
+}
+
+#nomes{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+h6{
+    color: #043142;
+    font-family: 'Pangolin', cursive;
+    font-size: 25px;
+    text-align: end;
+}
+/* ?------------------------- MEDIA QUERY ------------------------- */
+
+@media (max-width: 1000px){
+    .formulario{
+        display: block;
+        margin: 150px auto;
+        width: 80%;
+    }
+}
